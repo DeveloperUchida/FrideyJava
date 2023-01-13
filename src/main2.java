@@ -1,25 +1,19 @@
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
 
 public class main2
 {
-    public static void main (String[] args) throws Exception
+    public static void main(String[]args) throws Exception
     {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
+        int input = scan.nextInt();
         scan.close();
 
-        if(a == b)
+        int sum = 0;
+
+        for (int i=0; i<=input; i++)
         {
-            System.out.printf("%d\n%d\n",a,b);
-        }else if (a > b)
-        {
-            System.out.printf("%d\n",a);
+            sum += i;
         }
-        else
-        {
-            System.out.printf("%d\n",b);
-        }
-}
+        System.out.printf("%d\n",sum);
+    }
 }
